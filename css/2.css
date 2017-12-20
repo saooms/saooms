@@ -1,0 +1,365 @@
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-color: black;
+}
+
+.body1 {
+	background-image: url(../img/guitar1-2.jpg);
+}
+	
+.body2 {
+	background-image: url(../img/back2.jpg);
+}
+
+.body3 {
+	background-image: url(../img/back3.jpg);
+}
+
+@media (min-width: 768px) {
+
+	nav div {
+		top: 50%;
+		left: 5%;
+		margin-top: -30px;
+		position: relative;
+	}
+
+	nav div h1 {
+		text-align: center;
+		margin: 0;
+		font-size: 300%;
+		border-radius: 20%;
+		color: #fff;
+		width: 250px;
+		height: 60px;
+		border: 2px solid #fff; 
+	}
+
+	nav {
+		background-color: rgba(0,0,0,0.8);
+		height: 10%;
+		padding: 10px 5%;   
+		width: 90%;
+		top: 0;
+		position: relative;   
+		z-index: 2; 
+	}
+
+	ul {
+		position: absolute;
+		top: 50%;
+		right: 10%;
+		width: 1170px;
+		height: 38px;
+		list-style-type: none;
+		margin: -19px auto;
+		padding: 0;
+		direction: rtl;
+	}
+
+	nav ul .a, .b {
+		background-size: 10% 10px;
+		width: 10%;
+		height: 100%;
+		position: relative;
+		display: inline-block;  
+	}
+
+	nav ul li a {
+		display: block;
+		margin: 0 10%;
+		padding: 7% 0;
+		height: 60%;
+		text-align: center;
+		color: #fff;
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	nav ul li a:active {
+		color: red;
+	}
+
+	.a {
+		background: url(../img/line3.png) 0 15px no-repeat; 
+	}
+
+	nav ul li a:hover {
+		color: red;
+		border-bottom: 1px solid red;
+	}
+
+	.secH {
+		position: absolute;
+		top: -10%;
+		right: 0%;
+		width: 30%;
+		height: 120%;
+		transform: rotate(5deg);
+		background-color: rgba(255,255,255,0.4);
+		z-index: 1;	
+	}
+
+	.secH:hover {
+		animation: 2s slide forwards;
+	}
+
+	.secH aside {
+		border-left: 2px solid #fff;
+		height: 40%;
+	}
+
+	.secH aside main {
+		transform: rotate(-5deg);
+		width: 80%;
+		margin: 60% auto 0 7%;
+	}
+
+	@media (max-width: 940px) {
+		.secH aside main {
+			margin: 80% auto 0 7%;
+		}
+
+		ul {
+			right: 0;
+		}
+
+	}
+
+	section h2 {
+		margin: 0;
+	}
+
+	.secO, .secM, .secB {
+		position: absolute;
+		top: -10%;
+		right: 10%;
+		width: 80%;
+		height: 120%;
+		transform: rotate(5deg);
+		background-color: rgba(255,255,255,0.5);
+		z-index: 1;	
+		overflow: hidden;
+	}
+
+	.secO main, .secM main, .secB main {
+		border-left: 2px solid #fff;
+		margin: 25% 10% auto 0;
+		width: 100%;
+		height: 40%;	
+	}
+
+	.secO main article, .secM main article, .secB main article {
+		transform: rotate(-5deg);
+		width: 40%;
+		margin: 0 0 5% 5%;
+		position: relative;
+		word-spacing: 3px;
+	}
+
+	.secO main aside {
+		transform: rotate(-5deg);
+		width: 490px;
+		height: 70%;
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.secO main aside a {
+		display: block;
+		width: 150px;
+		height: 160px;
+		border: 1px solid #fff;
+		margin: 0;
+		background-color: rgba(0,0,0,0.8);
+		text-decoration: none;
+	}
+
+	.secO main aside a:hover, .secO main aside a p:hover {
+		color: red;
+		border: 2px;
+	}
+
+	.secO main aside a img {
+		width: 100%;
+		height: 50%;
+	}
+
+	.secO main aside a p {
+		margin: 16px 10px;
+		font-weight: 800;
+		color: #fff;
+	}
+
+	.secM main #butt, .secM main #git {
+		width: 10%;
+		height: 20%;
+		transform: rotate(-5deg);
+		position: relative;
+		margin: 10px 0 0 -2%;
+		background-color: #fff;
+		text-decoration: none;
+		display: block;
+		border: 1px solid;
+	}
+
+	.secM main #butt:hover, .secM main #git:hover {
+		animation: 2s button forwards;
+		border: 2px solid;
+	}
+
+	.secM main #butt img, .secM main #git img {
+		width: 100px;
+		height: 100%;
+		margin: 0 0 auto auto;
+		display: block;
+	}
+
+	.secM main aside {
+		width: 45%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+	}
+	.secM main aside div, .secB .s2 main div {
+		width: 33%;
+		height: 100%;
+		border-left: 2px solid;
+		background-color: rgba(128,128,128,0.8);
+		margin: 0;
+		padding: 0;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.secM main aside div:hover {
+		animation: 2s increase forwards;
+	}
+
+	.secM main aside div img {
+		transform: rotate(-5deg);
+		position: absolute;
+		left: -10%;
+		width: 576px;
+		height: 298px;
+		top: 20%;
+	}
+
+	.secM main aside div .that, .it {
+		margin: 16px 10px;
+		font-weight: 800;
+		color: #fff;
+		position: absolute;
+		transform: rotate(-5deg);
+	}
+
+	.that {
+		bottom: 30%;
+	}
+
+	.it {
+		bottom: 23%;
+	}
+
+	#cv {
+	width: 100%;
+	height: 150%;
+	top: 0;
+	left: 0;
+	background-color: rgba(128,128,128,0.8);
+	visibility: hidden;
+	position: absolute; 
+	z-index: 10;
+	}
+
+	#cv img {
+		display: none;
+	}
+
+	#cv section {
+		width: 500px;
+		height: 700px;
+		position: absolute;
+		left: 50%;
+		top: 35px;
+		margin-left: -250px;
+		background-color: #fff;
+		padding: 10px;
+	}
+
+	#cv section h1 {
+		width: 30px;
+		margin: 0 235px 50px;
+	}
+
+	#cv section div {
+		display: flex;
+		border-top: 15px solid;
+		border-bottom: 1px solid;
+	}
+
+	#cv section div p {
+		word-spacing: 5px;
+		margin: 20px;
+	}
+}
+
+
+
+@keyframes button {
+	from { width: 10%; }
+	to { width: 11.5%; }
+}
+
+@keyframes increase {
+	from { width: 33%; }
+	to { width: 38%; }
+}
+
+@keyframes slide {
+	from {right: 0%;}
+	to {right: 1.5%;}
+}
+
+#cv button {
+	position: absolute;
+	right: 200px;
+	top: 100px;
+}
+
+.secM main article .me {
+	width: 100px;
+	height: 150px;
+	display: block;
+	right: 50%;
+	top: 200px;
+	background-color: rgba(0,0,0,0.1);
+	float: right;
+	margin: 5px;
+}
+
+.secM main article .me img {
+	width: 100%;
+	height: 100%;
+}
+

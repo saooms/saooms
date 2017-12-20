@@ -1,0 +1,266 @@
+@media (max-width: 768px) {
+
+	body {
+		overflow-y: scroll;
+	}
+
+	nav {
+		background-color: rgba(0,0,0,0.8);
+		height: 350px;
+		padding: 0;
+		width: 100%;
+		top: 0;
+		position: relative;
+		z-index: 2;
+	}
+
+	div {
+		position: relative;
+		margin: 0 0 0 -125px;
+		top: 10px;
+		left: 50%;
+	}
+
+	div h1 {
+		text-align: center;
+		margin: 0;
+		font-size: 300%;
+		border-radius: 20%;
+		color: #fff;
+		width: 250px;
+		height: 60px;
+		border: 2px solid #fff; 	
+	}
+
+	ul {
+		position: relative;
+		width: 100%;
+		height: 300px;
+		display: flex;
+		flex-direction: column-reverse;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		right: 0;
+		top: ;
+	}
+
+	nav ul .a, .b {
+		display: block;
+		position: relative;
+		padding: 0;
+		height: 48px;
+		width: 100%;
+		margin: 10px 0;
+		display: inline-block;
+	}
+
+	nav ul li a {
+		margin: 0;
+		padding: 0;
+		height: 60%;
+		text-align: center;
+		color: #fff;
+		font-weight: 700;
+		text-decoration: none;
+		display: block;
+	}
+
+	nav ul li a:active {
+		color: red;
+	}
+
+	.secH {
+		width: 120%;
+		height: 400px;
+		transform: rotate(-5deg);
+		background-color: rgba(255,255,255,0.8);
+		margin: 50px 0 0 -10%;
+	}	
+
+	.secH aside {
+		transform: rotate(5deg);
+		position: absolute;
+		width: 80%;
+		top: 10px;
+		margin: 0 0 0 10%;
+	}	
+
+	.secH aside main {
+		width: 100%;
+	}
+
+	.secO, .secM{
+		width: 140%;
+		height: 1000px;
+		transform: rotate(-5deg);
+		background-color: rgba(255,255,255,0.8);
+		margin: 50px 0 0 -20%;
+	}
+
+	 .secO main {
+	 	transform: rotate(5deg);
+	 	position: absolute;
+	 	width: 75%;
+	 	top: 10px;
+	 	margin: 0 0 0 19%;	
+	 }
+
+	 .secO main article {
+	 	width: 80%;
+	 	margin-left: 10px;
+	 }
+	
+	 .secO main aside {
+	 	display: none;
+	 	width: 100%;
+	 	position: absolute;
+	 	display: flex;
+	 	flex-wrap: wrap;
+	 }
+
+	 @media (min-width: 670px) {
+	 	.secO {
+	 		height: 800px;
+	 	}
+
+		 .secO main aside a {
+			width: 150px;
+			height: 160px;
+			border: 1px solid #fff;
+			margin: 0;
+			background-color: rgba(0,0,0,0.8);
+			text-decoration: none;
+		}
+	}
+
+	@media (max-width: 670px) {
+		.secO main aside a {
+			width: 98%;
+			height: 30%;
+			border: 1px solid grey;
+			margin: 0;
+			background-color: rgba(0,0,0,0.8);
+			text-decoration: none;
+			left: 0;
+		}
+	}
+
+	.secO main aside a img {
+		width: 100%;
+		height: 50%;
+		margin: 0;
+	}
+
+	.secO main aside a p {
+		font-weight: 700;
+		margin-left: 10px;
+		color: #fff;
+	}
+
+	.secO main aside a:hover, .secO main aside a p:hover {
+		border-color: red;
+		color: red;
+	}
+
+	.secM main {
+		transform: rotate(5deg);
+		position: absolute;
+		top: 10px;
+		margin: 0 0 0 10%;
+		width: 80%;
+	}
+
+	.secM main article {
+		margin: 50px 0 40px 0;
+		width: 80%;
+	}
+
+	.secM main aside {
+		width: 100%;
+		height: 1000px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.secM .beroep div {
+		width: 120%;
+		height: 40%;
+	}
+
+	.secM .beroep div p {
+		position: absolute;
+		left: 10px;
+		bottom: 5px;
+		width: 70%;
+	}
+
+	.secM main aside div {
+		width: 100%;
+		height: 30%;
+		border: 1px solid grey;
+		margin: 0;
+		background-color: rgba(0,0,0,0.8);
+		text-decoration: none;
+		left: -15%;
+		transform: rotate(-5deg);
+	}
+
+	.secM main aside div:hover {
+		border: 2px solid red;
+	}
+
+	.secM main aside div img {
+		width: 100%;
+		height: 180px;
+	}
+
+	.secM main aside div p {
+		margin: 16px 30px;
+		font-weight: 800;
+		color: #fff;	
+		transform: rotate(5deg);
+		position: absolute;
+		left: 10px;
+		bottom: 5px;
+		width: 70%;
+	}
+
+	.secM main #butt, .secM main #git img {
+		width: 300px;
+		height: 200px;
+		margin: 20px 0 0 -10%;
+		background-color: #fff;
+		text-decoration: none;
+		border: 1px solid;
+		position: relative;
+	}
+
+
+	#git img, #butt img {
+		width: 100%;
+		height: 100%;
+	}
+
+	#cv {
+		width: 200%;
+		height: 150%;
+		top: 0;
+		left: 0;
+		background-color: rgba(128,128,128,0.8);
+		visibility: hidden;
+		position: absolute; 
+		z-index: 10;
+	}
+
+	#cv section {
+		display: none;
+	}
+
+	#cv img {
+		width: 75%;
+		position: absolute;
+		left: 110px;
+		top: 40px;
+	}
+}
